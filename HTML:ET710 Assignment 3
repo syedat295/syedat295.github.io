@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2x2 Bird Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Apply different filters to each bird image */
+        .box:nth-child(1) img {
+            filter: grayscale(100%);
+        }
+
+        .box:nth-child(2) img {
+            filter: sepia(100%);
+        }
+
+        .box:nth-child(3) img {
+            filter: hue-rotate(90deg);
+        }
+
+        .box:nth-child(4) img {
+            filter: contrast(150%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">
+            <img src="https://images.hdqwalls.com/wallpapers/bthumb/colorful-parrot-bird.jpg" class="d_img_holder img-responsive center-block" alt="Bird 1" title="Bird 1" style="cursor: -webkit-zoom-in; cursor: -moz-zoom-in;" width="602px" height="339px">
+            <p>Bird 1</p>
+        </div>
+        <div class="box">
+            <img src="https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?cs=srgb&amp;dl=flight-bird-blue-792416.jpg&amp;fm=jpg" id="img" style="width: 536px; height: 383px;">
+            <p>Bird 2</p>
+        </div>
+        <div class="box">
+            <img src="https://wallpapercave.com/wp/wp2284850.jpg" id="img" style="width: 612px; height: 383px;">
+            <p>Bird 3</p>
+        </div>
+        <div class="box">
+            <img src="https://1.bp.blogspot.com/-05t8yCPGsCk/VFt8Y6DnNeI/AAAAAAAACec/az-EdDUbbj4/s1600/Birds-HD-Wallpapers-09.jpeg" id="img" style="width: 680px; height: 383px;">
+            <p>Bird 4</p>
+        </div>
+    </div>
+</body>
+
+</html>
